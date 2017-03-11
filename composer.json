@@ -1,0 +1,23 @@
+{
+    "name": "milantex/tpc",
+    "description": "This project provides a mechanism to specify types for class properties. Also, property types have additional parameters, such as the regular expression pattern for strings, minimum and maximum value for integers etc. The special setter method handles type checking and will set the given value only if it is valid for the given type and its additional parameters. Check the documentation for an example.",
+    "type" : "library",
+    "license" : "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Milan Tair",
+            "email": "milan.tair@gmail.com"
+        }
+    ],
+    "support" : {
+        "email" : "milan.tair@gmail.com"
+    },
+    "require" : {
+        "php" : ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Milantex\\TPC\\": "src/"
+        }
+    }
+}
