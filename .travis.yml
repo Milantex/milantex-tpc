@@ -1,0 +1,21 @@
+language: php
+
+php:
+  - 7.0
+
+addons:
+  code_climate:
+    repo_token: a6e0d9bc4fc12799be7591931506dd1c35b3fc8ae63104c0b700c2d90a8240c9
+
+install:
+  - composer install --no-interaction
+
+script:
+    - vendor/bin/phpunit --coverage-clover=coverage.xml
+
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
+
+notifications:
+  email:
+    - milan.tair@gmail.com
