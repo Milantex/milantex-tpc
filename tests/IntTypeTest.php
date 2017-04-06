@@ -1,8 +1,6 @@
 <?php
     namespace Milantex\TPC\Tests;
-    
-    require_once '../vendor/autoload.php';
-    
+
     use Milantex\TPC\Types\IntType;
 
     class IntTypeTest extends \PHPUnit_Framework_TestCase {

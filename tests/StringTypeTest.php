@@ -1,8 +1,6 @@
 <?php
     namespace Milantex\TPC\Tests;
-    
-    require_once '../vendor/autoload.php';
-    
+
     use Milantex\TPC\Types\StringType;
 
     class StringTypeTest extends \PHPUnit_Framework_TestCase {
@@ -15,7 +13,7 @@
 
             $this->instance = new StringType($tags);
         }
-        
+
         public function testIsValid() {
             $this->assertFalse($this->instance->isValid([]));
             $this->assertFalse($this->instance->isValid((object) []));
