@@ -288,8 +288,8 @@ Look at the code for the FloatType type class for an example on how to create yo
     use Milantex\TPC\TypeInterface;
 
     class FloatType implements TypeInterface {
-        private $min = \PHP_FLOAT_MIN;
-        private $max = \PHP_FLOAT_MAX;
+        private $min = \PHP_INT_MIN; # PHP_FLOAT_MIN will be available 7.2+
+        private $max = \PHP_INT_MAX; # PHP_FLOAT_MAX will be available 7.2+
 
         public function __construct(\stdClass $tags) {
             if (\property_exists($tags, 'min') && \is_double($tags->min)) {
