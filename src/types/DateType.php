@@ -10,6 +10,10 @@
         private $max;
         
         private function isDate($value) {
+            if (!\is_string($value)) {
+                return false;
+            }
+
             $datetime = \DateTime::createFromFormat($this->dateFormat, $value . ' 00:00:00');
             
             if ($datetime === false) {
