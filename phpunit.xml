@@ -16,6 +16,7 @@
             <file>src/types/FloatType.php</file>
             <file>src/types/IntType.php</file>
             <file>src/types/StringType.php</file>
+            <file>src/TypedPropertyClass.php</file>
         </whitelist>
     </filter>
     <logging>

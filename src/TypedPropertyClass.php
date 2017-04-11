@@ -2,11 +2,18 @@
     namespace Milantex\TPC;
 
     class TypedPropertyClass {
+        /**
+         * @type Milantex\TPC\Types\IntType
+         * @min 1900
+         */
+        private $propertyForTestingPurposesOnly = '1988';
+        private $propertyForTestingPurposesOnlyWithoutAnnotations = NULL;
+
         private final function getPropertyComment(string $name) {
             $reflector = new \ReflectionClass($this);
 
             if (!$reflector->hasProperty($name)) {
-                return $this;
+                return '';
             }
 
             $comments = $reflector->getProperty($name)->getDocComment();
