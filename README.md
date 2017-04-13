@@ -1,3 +1,11 @@
+[![Build Status](https://travis-ci.org/Milantex/milantex-tpc.svg?branch=master)](https://travis-ci.org/Milantex/milantex-tpc)
+[![codecov](https://codecov.io/gh/Milantex/milantex-tpc/branch/master/graph/badge.svg)](https://codecov.io/gh/Milantex/milantex-tpc)
+[![Code Climate](https://codeclimate.com/github/Milantex/milantex-tpc/badges/gpa.svg)](https://codeclimate.com/github/Milantex/milantex-tpc)
+[![Latest Stable Version](https://poser.pugx.org/milantex/tpc/v/stable)](https://packagist.org/packages/milantex/tpc)
+[![Total Downloads](https://poser.pugx.org/milantex/tpc/downloads)](https://packagist.org/packages/milantex/tpc)
+[![License](https://poser.pugx.org/milantex/tpc/license)](https://packagist.org/packages/milantex/tpc)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/4d51d53a-f7bb-4be6-bc6a-af4ecbba9903/mini.png)](https://insight.sensiolabs.com/projects/4d51d53a-f7bb-4be6-bc6a-af4ecbba9903)
+
 # What are Milantex Typed Property Classes?
 This project provides a mechanism to specify types for class properties. Also, property types have additional parameters, such as the regular expression pattern for strings, minimum and maximum value for integers etc. The special setter method handles type checking and will set the given value only if it is valid for the given type and its additional parameters. Check the documentation for an example.
 
