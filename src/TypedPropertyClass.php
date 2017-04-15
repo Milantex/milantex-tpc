@@ -9,6 +9,11 @@
         private $propertyForTestingPurposesOnly = '1988';
         private $propertyForTestingPurposesOnlyWithoutAnnotations = NULL;
 
+        public function __construct() {
+            $this->propertyForTestingPurposesOnly = '1988';
+            $this->propertyForTestingPurposesOnlyWithoutAnnotations = NULL;
+        }
+
         private final function getPropertyComment(string $name) {
             $reflector = new \ReflectionClass($this);
 
@@ -30,7 +35,9 @@
             $matches = [];
             \preg_match_all('/^\\s*\*\\s*@([a-z_]+) +(.*)\\s*$/m', $comments, $matches);
 
-            for ($i=0; $i<\count($matches[0]); $i++) {
+            $count = \count($matches[0]);
+
+            for ($i=0; $i<$count; $i++) {
                 $tags[$matches[1][$i]] = trim($matches[2][$i]);
             }
 
